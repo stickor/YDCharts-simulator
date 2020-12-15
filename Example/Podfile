@@ -3,7 +3,9 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'YDCharts_Example' do
-  pod 'YDCharts', :path => '../'
+#  pod 'YDCharts', :path => '../'
+  pod 'YDCharts', :podspec => '../'
+  
 
   target 'YDCharts_Tests' do
     inherit! :search_paths

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YDCharts'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of YDCharts.'
+  s.version          = '0.0.1'
+  s.summary          = '图表K线库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,29 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: 图表K线
                        DESC
 
   s.homepage         = 'https://github.com/895148635@qq.com/YDCharts'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '895148635@qq.com' => 'yangyinyin@yd.com.cn' }
+  s.author           = { 'yd' => 'yd' }
   s.source           = { :git => 'https://github.com/895148635@qq.com/YDCharts.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'YDCharts/Classes/**/*'
+  s.vendored_libraries = 'YDCharts/Classes/**/*.a'
   
   # s.resource_bundles = {
   #   'YDCharts' => ['YDCharts/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.public_header_files = 'Pod/Classes/**/*.h'
+   s.frameworks = 'UIKit', 'Foundation'
+   #s.dependency 'AFNetworking', '~> 2.3'
+  
+
+
 end
