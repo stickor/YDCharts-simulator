@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: 图表K线
                        DESC
 
-  s.homepage         = 'https://github.com/895148635@qq.com/YDCharts'
+  s.homepage         = 'git@github.com:stickor/YDCharts-simulator.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yd' => 'yd' }
-  s.source           = { :git => 'https://github.com/895148635@qq.com/YDCharts.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:stickor/YDCharts-simulator.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
